@@ -1,2 +1,173 @@
-# creditrecovery
-ä¿¡ç”¨å¡å‚¬ç¼´è¿½æ”¶ç³»ç»Ÿï¼ŒåŸºäºå¼€æºjeecgå¼€å‘è§£å†³æ–¹æ¡ˆ
+JEECG Î¢ÔÆ¿ìËÙ¿ª·¢Æ½Ì¨
+===============
+
+µ±Ç°×îĞÂ°æ±¾£º 3.6.3£¨·¢²¼ÈÕÆÚ£º20160410£©
+
+Ç°ÑÔ£º
+-----------------------------------
+Ëæ×Å WEB UI ¿ò¼Ü ( EasyUI/Jquery UI/Ext/DWZ) µÈµÄÖğ½¥³ÉÊì,ÏµÍ³½çÃæÖğ½¥ÊµÏÖÍ³Ò»»¯£¬´úÂëÉú³ÉÆ÷Ò²¿ÉÒÔÉú³ÉÍ³Ò»¹æ·¶µÄ½çÃæ£¡
+´úÂëÉú³É+ÊÖ¹¤MERGE°ëÖÇÄÜ¿ª·¢½«ÊÇĞÂµÄÇ÷ÊÆ£¬µ¥±íÊı¾İÄ£ĞÍºÍÒ»¶Ô¶àÊı¾İÄ£ĞÍµÄÔöÉ¾¸Ä²é¹¦ÄÜÖ±½ÓÉú³ÉÊ¹ÓÃ,¿É½ÚÊ¡60%¹¤×÷Á¿£¬¿ìËÙÌá¸ß¿ª·¢Ğ§ÂÊ£¡£¡£¡
+
+
+¼ò½é
+-----------------------------------
+JEECG£¨J2EE Code Generation£©ÊÇÒ»¿î»ùÓÚ´úÂëÉú³ÉÆ÷µÄÖÇÄÜ¿ª·¢Æ½Ì¨¡£ÒıÁìĞÂµÄ¿ª·¢Ä£Ê½(Online CodingÄ£Ê½->´úÂëÉú³ÉÆ÷Ä£Ê½->ÊÖ¹¤MERGEÖÇÄÜ¿ª·¢)£¬
+¿ÉÒÔ°ïÖú½â¾öJavaÏîÄ¿60%µÄÖØ¸´¹¤×÷£¬ÈÃ¿ª·¢¸ü¶à¹Ø×¢ÒµÎñÂß¼­¡£¼ÈÄÜ¿ìËÙÌá¸ß¿ª·¢Ğ§ÂÊ£¬°ïÖú¹«Ë¾½ÚÊ¡ÈËÁ¦³É±¾£¬Í¬Ê±ÓÖ²»Ê§Áé»îĞÔ¡£
+
+JEECG×ÚÖ¼ÊÇ: ¼òµ¥¹¦ÄÜÓÉ´úOnline CodingÅäÖÃ³ö¹¦ÄÜ;¸´ÔÓ¹¦ÄÜÓÉ´úÂëÉú³ÉÆ÷Éú³É½øĞĞÊÖ¹¤Merge; ¸´ÔÓÁ÷³ÌÒµÎñ²ÉÓÃ±íµ¥×Ô¶¨Òå£¬ÒµÎñÁ÷³ÌÊ¹ÓÃ¹¤×÷Á÷À´ÊµÏÖ¡¢À©Õ¹³öÈÎÎñ½Ó¿Ú£¬¹©¿ª·¢±àĞ´ÒµÎñÂß¼­¡£ÊµÏÖÁËÁ÷³ÌÈÎÎñ½ÚµãºÍÈÎÎñ½Ó¿ÚµÄÁé»îÅäÖÃ£¬¼È±£Ö¤ÁË¹«Ë¾Á÷³ÌµÄ±£ÃÜĞĞ£¬ÓÖ¼õÉÙÁË¿ª·¢ÈËÔ±µÄ¹¤×÷Á¿¡£
+
+ÊÊÓÃÏîÄ¿
+-----------------------------------
+JEECG¿ìËÙ¿ª·¢Æ½Ì¨£¬¿ÉÒÔÓ¦ÓÃÔÚÈÎºÎJ2EEÏîÄ¿µÄ¿ª·¢ÖĞ£¬ÓÈÆäÊÊºÏÆóÒµĞÅÏ¢¹ÜÀíÏµÍ³£¨MIS£©¡¢ÄÚ²¿°ì¹«ÏµÍ³£¨OA£©¡¢ÆóÒµ×ÊÔ´¼Æ»®ÏµÍ³£¨ERP£©¡¢¿Í»§¹ØÏµ¹ÜÀíÏµÍ³£¨CRM£©µÈ£¬Æä°ëÖÇÄÜÊÖ¹¤MergeµÄ¿ª·¢·½Ê½£¬¿ÉÒÔÏÔÖøÌá¸ß¿ª·¢Ğ§ÂÊ70%ÒÔÉÏ£¬¼«´ó½µµÍ¿ª·¢³É±¾£»JEECGÓÈÎªÏÔÖøµÄÖ§³ÖSAASÆóÒµ¼¶Ó¦ÓÃ¿ª·¢£¬²å¼ş»úÖÆ¸üºÃµÄÖ§³ÖÁËSAASÔÆÓ¦ÓÃĞèÇó¡£
+
+ÎªÊ²Ã´Ñ¡ÔñJEECG?
+-----------------------------------
+* 1.²ÉÓÃÖ÷Á÷¿ò¼Ü£¬ÈİÒ×ÉÏÊÖ; ´úÂëÉú³ÉÆ÷ÒÀÀµĞÔµÍ,ºÜ·½±ãµÄÀ©Õ¹ÄÜÁ¦£¬¿ÉÍêÈ«ÊµÏÖ¶ş´Î¿ª·¢;
+* 2.¿ª·¢Ğ§ÂÊºÜ¸ß,²ÉÓÃ´úÂëÉú³ÉÆ÷£¬µ¥±íÊı¾İÄ£ĞÍºÍÒ»¶Ô¶à(¸¸×Ó±í)Êı¾İÄ£ĞÍ£¬ÔöÉ¾¸Ä²é¹¦ÄÜ×Ô¶¯Éú³É£¬²Ëµ¥ÅäÖÃÖ±½ÓÊ¹ÓÃ£»
+* 3.Ò³ÃæĞ£Ñé×Ô¶¯Éú³É(±ØĞëÊäÈë¡¢Êı×ÖĞ£Ñé¡¢½ğ¶îĞ£Ñé¡¢Ê±¼ä¿Õ¼äµÈ);
+* 4.·â×°ÍêÉÆµÄÓÃ»§»ù´¡È¨ÏŞ¡¢Ç¿´óµÄÊı¾İÈ¨ÏŞ¡¢ºÍÊı¾İ×ÖµäµÈ»ù´¡¹¦ÄÜ£¬Ö±½ÓÊ¹ÓÃÎŞĞèĞŞ¸Ä
+* 5.³£ÓÃ¹²Í¨·â×°£¬¸÷ÖÖ¹¤¾ßÀà(¶¨Ê±ÈÎÎñ,¶ÌĞÅ½Ó¿Ú,ÓÊ¼ş·¢ËÍ,Excelµ¼³öµÈ),»ù±¾Âú×ã80%ÏîÄ¿ĞèÇó
+* 6.¼¯³É¼òÒ×±¨±í¹¤¾ß£¬Í¼Ïñ±¨±íºÍÊı¾İµ¼³ö·Ç³£·½±ã£¬¿É¼«Æä·½±ãµÄÉú³Épdf¡¢excel¡¢wordµÈ±¨±í£»
+* 7.¼¯³É¹¤×÷Á÷activiti£¬²¢ÊµÏÖÁËÖ»ĞèÔÚÒ³ÃæÅäÖÃÁ÷³Ì×ªÏò£¬¿É¼«´óµÄ¼ò»¯jbpm¹¤×÷Á÷µÄ¿ª·¢£»ÓÃjbpmµÄÁ÷³ÌÉè¼ÆÆ÷»­³öÁËÁ÷³Ì×ßÏò£¬Ò»¸ö¹¤×÷Á÷»ù±¾¾ÍÍê³ÉÁË£¬Ö»ĞèĞ´ºÜÉÙÁ¿µÄjava´úÂë£»
+* 8.UI±êÇ©¿â£¬Õë¶ÔWEB UI½øĞĞ±ê×¼Ê½·â×°£¬Ò³ÃæÍ³Ò»²ÉÓÃ×Ô¶¨Òå±êÇ©ÊµÏÖ¹¦ÄÜ£ºÁĞ±íÊı¾İÕ¹ÏÖ¡¢Ò³ÃæĞ£ÑéµÈ,±êÇ©Ê¹ÓÃ¼òµ¥ÇåÎúÇÒ±ãÓÚÎ¬»¤
+* 9.ÔÚÏßÁ÷³ÌÉè¼Æ£¬²ÉÓÃ¿ªÔ´ActivitiÁ÷³ÌÒıÇæ£¬ÊµÏÖÔÚÏß»­Á÷³Ì,×Ô¶¨Òå±íµ¥,±íµ¥¹Ò¿¿,ÒµÎñÁ÷×ª
+* 10.²éÑ¯¹ıÂËÆ÷£º²éÑ¯¹¦ÄÜ×Ô¶¯Éú³É£¬ºóÌ¨¶¯Ì¬Æ´SQL×·¼Ó²éÑ¯Ìõ¼ş£»Ö§³Ö¶àÖÖÆ¥Åä·½Ê½£¨È«Æ¥Åä/Ä£ºı²éÑ¯/°üº¬²éÑ¯/²»Æ¥Åä²éÑ¯£©£»
+* 11.¶àÊı¾İÔ´£º¼°Æä¼òÒ×µÄÊ¹ÓÃ·½Ê½£¬ÔÚÏßÅäÖÃÊı¾İÔ´ÅäÖÃ£¬±ã½İµÄ´ÓÆäËûÊı¾İ×¥È¡Êı¾İ£»
+* 12.¹ú¼Ê»¯£ºÖ§³Ö¶àÓïÑÔ£¬¿ª·¢¹ú¼Ê»¯ÏîÄ¿·Ç³£·½±ã£»
+* 13.Êı¾İÈ¨ÏŞ£¨¾«Ï¸»¯Êı¾İÈ¨ÏŞ¿ØÖÆ£¬¿ØÖÆµ½ĞĞ¼¶£¬ÁĞ±í¼¶£¬±íµ¥×Ö¶Î¼¶£¬ÊµÏÖ²»Í¬ÈË¿´²»Í¬Êı¾İ£¬²»Í¬ÈË¶ÔÍ¬Ò»¸öÒ³Ãæ²Ù×÷²»Í¬×Ö¶Î
+* 14.¶àÖÖÊ×Ò³·ç¸ñÇĞ»»,Ö§³Ö×Ô¶¨ÒåÊ×Ò³·ç¸ñ¡££¨¾­µä·ç¸ñ¡¢Shortcut·ç¸ñ¡¢ACE bootstrap·ç¸ñ¡¢ÔÆ×ÀÃæ·ç¸ñ£©
+* 15.ÔÚÏßÅäÖÃ±¨±í£¨ÎŞĞè±àÂë£¬Í¨¹ıÔÚÏßÅäÖÃ·½Ê½£¬ÊµÏÖÇúÏßÍ¼£¬Öù×´Í¼£¬Êı¾İµÈ±¨±í£©
+* 16.¼òÒ×Excelµ¼Èëµ¼³ö£¬Ö§³Öµ¥±íµ¼³öºÍÒ»¶Ô¶à±íÄ£Ê½µ¼³ö£¬Éú³ÉµÄ´úÂë×Ô´øµ¼Èëµ¼³ö¹¦ÄÜ
+* 17.×Ô¶¨Òå±íµ¥£¬Ö§³ÖÓÃ»§×Ô¶¨Òå±íµ¥²¼¾Ö£¬Ö§³Öµ¥±í£¬Ò»¶Ô¶à±íµ¥¡¢Ö§³Öselect¡¢radio¡¢checkbox¡¢textarea¡¢date¡¢popup¡¢ÁĞ±í¡¢ºêµÈ¿Ø¼ş
+
+JEECG ÊÊÓÃ·¶Î§
+-----------------------------------
+JEECGÖÇÄÜ¿ª·¢Æ½Ì¨£¬¿ÉÒÔÓ¦ÓÃÔÚÈÎºÎJ2EEÏîÄ¿µÄ¿ª·¢ÖĞ£¬ÓÈÆäÊÊºÏÆóÒµĞÅÏ¢¹ÜÀíÏµÍ³£¨MIS£©¡¢ÄÚ²¿°ì¹«ÏµÍ³£¨OA£©¡¢ÆóÒµ×ÊÔ´¼Æ»®ÏµÍ³£¨ERP£©
+¡¢¿Í»§¹ØÏµ¹ÜÀíÏµÍ³£¨CRM£©µÈ£¬Æä°ëÖÇÄÜÊÖ¹¤MergeµÄ¿ª·¢·½Ê½£¬¿ÉÒÔÏÔÖøÌá¸ß¿ª·¢Ğ§ÂÊ60%ÒÔÉÏ£¬¼«´ó½µµÍ¿ª·¢³É±¾¡£
+
+
+JEECG ¹¦ÄÜÌØµã
+-----------------------------------
+* 	²ÉÓÃSpringMVC + Hibernate + Minidao(ÀàMybatis) + Easyui(UI¿â)+ Jquery + Boostrap + Ehcache + Redis + ZtreeµÈ»ù´¡¼Ü¹¹</br>
+* 	²ÉÓÃÃæÏòÉùÃ÷µÄ¿ª·¢Ä£Ê½£¬ »ùÓÚ·ºĞÍ±àĞ´¼«ÉÙ´úÂë¼´¿ÉÊµÏÖ¸´ÔÓµÄÊı¾İÕ¹Ê¾¡¢Êı¾İ±à¼­¡¢
+±íµ¥´¦ÀíµÈ¹¦ÄÜ£¬ÔÙÅäºÏOnline CodingÔÚÏß¿ª·¢Óë´úÂëÉú³ÉÆ÷µÄÊ¹ÓÃ,½«J2EEµÄ¿ª·¢Ğ§ÂÊÌá¸ß6±¶ÒÔÉÏ£¬¿ÉÒÔ½«´úÂë¼õÉÙ80%ÒÔÉÏ¡£</br>
+
+* 	JEECG ¼¼Êõµã×Ü½á:
+
+* 	<b>¼¼ÊõµãÒ»£º</b>Online CodingÔÚÏß¿ª·¢(Í¨¹ıÔÚÏßÅäÖÃÊµÏÖÒ»¸ö±íÄ£ĞÍµÄÔöÉ¾¸Ä²é¹¦ÄÜ£¬ÎŞĞèÒ»ĞĞ´úÂë£¬Ö§³ÖÓÃ»§×Ô¶¨Òå±íµ¥²¼¾Ö) </br>
+* 	<b>¼¼Êõµã¶ş£º</b>´úÂëÉú³ÉÆ÷£¬Ö§³Ö¶àÖÖÊı¾İÄ£ĞÍ,¸ù¾İ±íÉú³É¶ÔÓ¦µÄEntity,Service,Dao,Action,JSPµÈ,ÔöÉ¾¸Ä²é¹¦ÄÜÉú³ÉÖ±½ÓÊ¹ÓÃ</br>
+* 	<b>¼¼ÊõµãÈı£º</b>UI¿ìËÙ¿ª·¢¿â£¬Õë¶ÔWEB UI½øĞĞ±ê×¼·â×°£¬Ò³ÃæÍ³Ò»²ÉÓÃUI±êÇ©ÊµÏÖ¹¦ÄÜ£ºÊı¾İdatagrid,±íµ¥Ğ£Ñé,Popup,TabµÈ£¬ÊµÏÖJSPÒ³ÃæÁãJS£¬¿ª·¢Î¬»¤·Ç³£¸ßĞ§</br>
+* 	<b>¼¼ÊõµãËÄ£º</b>ÔÚÏßÁ÷³Ì¶¨Òå£¬²ÉÓÃ¿ªÔ´ActivitiÁ÷³ÌÒıÇæ£¬ÊµÏÖÔÚÏß»­Á÷³Ì,×Ô¶¨Òå±íµ¥,±íµ¥¹Ò½Ó,ÒµÎñÁ÷×ª£¬Á÷³Ì¼à¿Ø£¬Á÷³Ì¸ú×Ù£¬Á÷³ÌÎ¯ÍĞµÈ</br>
+* 	<b>¼¼ÊõµãÎå£º</b>×Ô¶¨Òå±íµ¥,Ö§³ÖÓÃ»§×Ô¶¨Òå±íµ¥²¼¾Ö£¬Ö§³Öµ¥±í¡¢ÁĞ±í¡¢Select\Radio\Checkbox\PopUP\DateµÈÌØÊâ¿Ø¼ş</br>
+* 	<b>¼¼ÊõµãÁù£º</b>²éÑ¯¹ıÂËÆ÷£º²éÑ¯¹¦ÄÜ×Ô¶¯Éú³É£¬ºóÌ¨¶¯Ì¬Æ´SQL×·¼Ó²éÑ¯Ìõ¼ş£»Ö§³Ö¶àÖÖÆ¥Åä·½Ê½£¨È«Æ¥Åä/Ä£ºı²éÑ¯/°üº¬²éÑ¯/²»Æ¥Åä²éÑ¯£©</br>
+* 	<b>¼¼ÊõµãÆß£º</b>ÒÆ¶¯Æ½Ì¨Ö§³Ö£¬¶ÔBootstrap(¼æÈİHtml5)½øĞĞ±ê×¼·â×° </br>
+* 	<b>¼¼Êõµã°Ë£º</b>¶¯Ì¬±¨±í¹¦ÄÜ£¨ÓÃ»§ÊäÈëÒ»¸ösql£¬ÏµÍ³×Ô¶¯½âÎöÉú³É±¨±í£©</br>
+*   <b>¼¼Êõµã¾Å£º</b>Êı¾İÈ¨ÏŞ£¨¾«Ï¸»¯Êı¾İÈ¨ÏŞ¿ØÖÆ£¬¿ØÖÆµ½ĞĞ¼¶£¬ÁĞ±í¼¶£¬±íµ¥×Ö¶Î¼¶£¬ÊµÏÖ²»Í¬ÈË¿´²»Í¬Êı¾İ£¬²»Í¬ÈË¶ÔÍ¬Ò»¸öÒ³Ãæ²Ù×÷²»Í¬×Ö¶Î£©</br>
+*   <b>¼¼ÊõµãÊ®£º</b>¹ú¼Ê»¯£¨Ö§³Ö¶àÓïÑÔ£¬¹ú¼Ê»¯µÄ·â×°Îª¶àÓïÑÔ×öÁË±ã½İÖ§³Ö£©</br>
+*   <b>¼¼ÊõµãÊ®Ò»£º</b>¶àÊı¾İÔ´£¨ÔÚÏßÅäÖÃÊı¾İÔ´£¬Êı¾İÔ´¹¤×÷Àà·â×°£©</br>
+*   <b>¼¼ÊõµãÊ®¶ş£º</b>¶àÖÖÊ×Ò³·ç¸ñÇĞ»»,Ö§³Ö×Ô¶¨ÒåÊ×Ò³·ç¸ñ¡££¨¾­µä·ç¸ñ¡¢Shortcut·ç¸ñ¡¢ACE bootstrap·ç¸ñ¡¢ÔÆ×ÀÃæ·ç¸ñ£©</br>
+*   <b>¼¼ÊõµãÊ®Èı£º</b>ÔÚÏßÅäÖÃ±¨±í£¨ÎŞĞè±àÂë£¬Í¨¹ıÔÚÏßÅäÖÃ·½Ê½£¬ÊµÏÖÇúÏßÍ¼£¬Öù×´Í¼£¬Êı¾İµÈ±¨±í£©</br>
+*   <b>¼¼ÊõµãÊ®ËÄ£º</b>¼òÒ×Excelµ¼Èëµ¼³ö£¬Ö§³Öµ¥±íµ¼³öºÍÒ»¶Ô¶à±íÄ£Ê½µ¼³ö£¬Éú³ÉµÄ´úÂë×Ô´øµ¼Èëµ¼³ö¹¦ÄÜ</br>
+*   <b>¼¼ÊõµãÊ®Îå£º</b>ÒÆ¶¯OA£¬ÒÆ¶¯OAÉóÅú¹¦ÄÜ£¬²ÉÓÃH5¼¼Êõ£¬ÊµÏÖÊÖ»úÒÆ¶¯°ì¹«£¬ÎŞ·ì¶Ô½ÓÎ¢ĞÅ¡¢¶¤¶¤¡¢Î¢ĞÅÆóÒµºÅ¡¢Ò²¿ÉÒÔ×öAPP</br>
+*   <b>¼¼ÊõµãÊ®Áù£º</b>ÒÆ¶¯Í¼±í£¬ÔÚÏßÅäÖÃÒÆ¶¯±¨±í£¬²ÉÓÃH5¼¼Êõ£¬¿ÉÒÔÊÖ»ú¶Ë²é¿´</br>
+*   <b>¼¼ÊõµãÊ®Æß£º</b>²å¼ş¿ª·¢£¬ÒµÎñ¹¦ÄÜ×é¼şÒÔ²å¼ş·½Ê½¼¯³ÉÆ½Ì¨£¬Ò²¿ÉÒÔµ¥¶À²¿Êğ·¢·¢²¼£¬ÓĞÁ¦Ö§³ÅÁËSAASÔÆÓ¦ÓÃÏµÍ³ĞèÇó</br>
+
+
+* 	JEECG V3.6.2, ¾­¹ıÁË×¨ÒµÑ¹Á¦²âÊÔ,ĞÔÄÜ²âÊÔ£¬±£Ö¤ºóÌ¨Êı¾İµÄ×¼È·ĞÔºÍÒ³Ãæ·ÃÎÊËÙ¶È</br>
+* 	Ö§³Ö¶àÖÖä¯ÀÀÆ÷: IE, »ğºü, Google µÈ</br>
+* 	Ö§³ÖÊı¾İ¿â: Mysql,Oracle10g,Postgre,SqlServerµÈ</br>
+* 	»ù´¡È¨ÏŞ: ÓÃ»§£¬½ÇÉ«£¬²Ëµ¥È¨ÏŞ£¬°´Å¥È¨ÏŞ£¬Êı¾İÈ¨ÏŞ</br>
+* 	ÖÇÄÜ±¨±í¼¯³É: ¼òÒ×µÄÍ¼Ïñ±¨±í¹¤¾ßºÍExcelµ¼Èëµ¼³ö</br>
+* 	WebÈİÆ÷²âÊÔÍ¨¹ıµÄÓĞJettyºÍTomcat6,Weblogic</br>
+* 	¼´½«ÍÆ³ö¹¦ÄÜ£º·Ö²¼Ê½²¿Êğ£¬ÔÆÆ½Ì¨£¬ÒÆ¶¯Æ½Ì¨¿ª·¢£¬¹æÔòÒıÇæ</br>
+* 	ÒªÇóJDK1.6+</br>
+
+
+¼¼ÊõÎÄµµ
+-----------------------------------
+* [JEECG ¿ª·¢»·¾³ÊÖ°ÑÊÖÈëÃÅ](http://blog.csdn.net/zhangdaiscott/article/details/50915206)
+* [JEECG ³£¼ûÎÊÌâ´óÈ«](http://www.jeecg.org/forum.php?mod=viewthread&tid=1830&extra=page%3D1)
+* [JEECG ±¾µØMaven²Ö¿âÏÂÔØ](http://git.oschina.net/jeecg/jeecg-local-maven)
+* [JEECG Lib°üÏÂÔØ£¬¹©¸ÄÔì·Çmaven¹¤³Ì](http://git.oschina.net/jeecg/jeecg-local-maven)
+* [JEECG ·Çmaven°æ±¾ÏÂÔØ](http://git.oschina.net/jeecg/jeecg-no_maven)
+* [JEECG ¿ª·¢ÈëÃÅÊÓÆµ](http://www.jeecg.org/forum.php?mod=viewthread&tid=197&extra=page%3D1)
+* [JEECG ¸ü¶àÎÄµµ](http://wiki.jeecg.org/display/12/Home)
+* [JEECG ÔÚÏßÑİÊ¾DEMO](http://demo.jeecg.org)
+
+
+    
+¼¼Êõ½»Á÷
+-----------------------------------
+* 	×÷Õß£º[ÕÅ´úºÆ](http://www.jeecg.org/forum.php?mod=viewthread&tid=1047)</br>
+* 	ÓÊÏä£ºjeecg@sina.com</br>
+* 	QQ½»Á÷Èº£º 176031980¡¢106838471£¨Âú£©¡¢106259349£¨Âú£©</br>
+*   ÂÛÌ³£º[www.jeecg.org](http://www.jeecg.org)
+
+
+ÏµÍ³ÑİÊ¾
+-----------------------------------
+###  [1].¶àÌ×Ê×Ò³·ç¸ñ£¬Ö§³Ö×Ô¶¨Òå£¨Bootstrap·ç¸ñ|ÔÆ×ÀÃæ·ç¸ñ|¾­µä·ç¸ñ|Shortcut·ç¸ñµÈ£©
+![github](http://img.blog.csdn.net/20150607214324659?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20150607214353113?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+
+###  [2].±íµ¥×Ô¶¨ÒåÉè¼ÆĞ§¹û
+![github](http://www.jeecg.org/data/attachment/forum/201512/17/175056vgzo2j2thph29jdp.jpg "jeecg")
+![github](http://www.jeecg.org/data/attachment/forum/201512/17/175135xq9fwiun3pi6i4e6.jpg "jeecg")
+![github](http://www.jeecg.org/data/attachment/forum/201512/17/175152r6eg2f15g58jzzej.png "jeecg")
+![github](http://www.jeecg.org/data/attachment/forum/201512/17/175103v1r87337prnfr1du.jpg "jeecg")
+
+###  [3].±¨±íÑİÊ¾
+![github](http://img.blog.csdn.net/20150607222027195?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20150607214724128?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20150607221941932?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20150607214807402?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvemhhbmdkYWlzY290dA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+
+###  [4].ÒÆ¶¯±¨±íÑİÊ¾
+![github](http://img.blog.csdn.net/20160304140805046?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160304140809176?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160304140812389?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160304140820202?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160304140823843?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+
+###  [5].Á÷³Ì×é¼şÑİÊ¾
+![github](http://www.jeecg.org/data/attachment/forum/201303/02/123311mf9fa22tv69b228f.jpg "jeecg")
+![github](http://www.jeecg.org/data/attachment/forum/201303/02/123412x003euegeg7nb68z.jpg "jeecg")
+![github](http://www.jeecg.org/data/attachment/forum/201303/02/124748gyhrgvr45vshyc82.jpg "jeecg")
+![github](http://www.jeecg.org/data/attachment/forum/201303/02/123428ubcjjnuwjbkjrnrw.jpg "jeecg")
+![github](http://www.jeecg.org/data/attachment/forum/201303/02/124749up2j5id7gj9kppp8.jpg "jeecg")
+
+###  [6].ÒÆ¶¯OAÑİÊ¾
+![github](http://img.blog.csdn.net/20160303175110494?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160303175124104?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160303175134698?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160303175138713?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+![github](http://img.blog.csdn.net/20160303175149042?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center "jeecg")
+
+
+´úÂëÊ¾Àı
+-----------------------------------
+    ÕâÊÇÒ»¸öÓĞ¶àĞĞµÄÎÄ±¾¿ò  
+    <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+    <%@include file="/context/mytags.jsp"%>
+    <div class="easyui-layout" fit="true">
+    <div region="center" style="padding:1px;">
+    <t:dategrid name="jeecgDemoList" title="¿ª·¢DEMOÁĞ±í" actionUrl="jeecgDemoController.do?datagrid" idField="id" fit="true">
+    <t:dgCol title="±àºÅ" field="id" hidden="false"></t:dgCol>
+    <t:dgCol title="ÓÃ»§Ãû" field="userName" query="true"></t:dgCol>
+    <t:dgCol title="µç»°ºÅÂë" sortable="false" field="mobilePhone" width="20" query="true"></t:dgCol>
+    <t:dgCol title="°ì¹«µç»°" field="officePhone"></t:dgCol>
+    <t:dgCol title="ÓÊÏä" field="email"></t:dgCol>
+    <t:dgCol title="ÄêÁä" sortable="true" field="age"></t:dgCol>
+    <t:dgCol title="¹¤×Ê"  field="sex"></t:dgCol>
+    <t:dgCol title="ĞÔ±ğ"  field="salary"></t:dgCol>
+    <t:dgCol title="ÉúÈÕ" field="birthday" formatter="yyyy/MM/dd"></t:dgCol>
+    <t:dgCol title="´´½¨ÈÕÆÚ" field="createTime" formatter="yyyy-MM-dd hh:mm:ss"></t:dgCol>
+    <t:dgCol title="²Ù×÷" field="opt" width="100"></t:dgCol>
+    <t:dgFunOpt funname="szqm(id)" title="ÉóºË" />
+    <t:dgDelOpt title="É¾³ı" url="jeecgDemoController.do?del&id={id}" />
+    <t:dgToolBar title="Â¼Èë" icon="icon-add"></t:dgToolBar>
+    <t:dgToolBar title="±à¼­" icon="icon-edit"></t:dgToolBar>
+    </t:dategrid>
+    </div>
+    </div>
+    
